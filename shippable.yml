@@ -18,6 +18,8 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - mvn clean cobertura:cobertura
+    - mvn test
 
  # post_ci:
   #  - docker push shippabledocker/hitchcock3_sample_node
