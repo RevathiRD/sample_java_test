@@ -23,7 +23,13 @@ build:
 
   post_ci:
     - docker push shippabledocker/hitchcock3_sample_java1
-
+integrations:
+  hub:
+    - integrationName: ship-docker
+      type: docker
+      #branches:
+       # only:
+        #  - master
 #after_success:
  #  - mvn clean cobertura:cobertura
   # - mvn test
