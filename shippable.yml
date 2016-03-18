@@ -18,7 +18,6 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - mvn clean cobertura:cobertura
-    - mvn test
+   
 
   cache: true
